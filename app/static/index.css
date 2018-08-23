@@ -1,0 +1,14 @@
+html,body {
+    text-align: center;
+
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.rules-map{
+    margin: 10px 50px;
+    text-align: left;
+}

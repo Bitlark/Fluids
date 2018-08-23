@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fluids</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+</head>
+<body>
+<h1>Fluids</h1>
+<h2>Mock API Server</h2>
+<h4>Power by Flask</h4>
+<img class="logo" src="{{url_for('static',filename='fluids.jpg')}}" alt="logo">
+<div class="rules-map">
+    <h3>URL Map</h3>
+    {% if rules_map %}
+        <ul>
+            {% for rule_key, rule in rules_map.items() %}
+            <li> {{rule}}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
+</body>
+</html>
